@@ -1,0 +1,4 @@
+SELECT PlayerID, COUNT(*) AS Goals
+FROM Goal
+GROUP BY PlayerID, MatchID
+HAVING COUNT(*) = 4;
